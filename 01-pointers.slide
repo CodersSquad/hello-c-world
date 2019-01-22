@@ -1,0 +1,59 @@
+Pointers in C
+Where all the fun starts
+22 Jan 2019
+Tags: coders, programming, c
+
+Obed N Munoz
+Cloud Software Engineer, Intel Corporation
+obed.n.munoz@ [ gmail | tec ] .com
+http://obedmr.com
+@_obedmr
+
+* Pointer
+A pointer is a variable that contains the address of a variable.
+
+.image images/01/pointer.png
+
+ int x = 1, y = 2, z[10];
+
+ int *ip;         /* ip is a pointer to int */
+
+ ip = &x;         /* ip now points to x */
+
+ y = *ip;         /* y is now 1 */
+
+ *ip = 0;         /* x is now 0 */
+
+ ip = &z[0];      /* ip now points to z[0] */
+
+
+* Pointers in Functions
+
+- Arguments by value
+
+ void swap(int x, int y)
+ {
+    int temp;
+    temp = x;
+    x = y;
+    y = temp;
+ }
+
+
+- Arguments by reference
+
+ void swap(int *px, int *py)
+ {
+     int temp;
+     temp = *px;
+     *px = *py;
+     *py = temp;
+ }
+
+So, what would be used in the `main` function?
+
+
+* Resources
+This material is genereated thanks to some extracts of the following book:
+
+- The C Programming Language _by_ _Brian_ _W._ _Kernighan_

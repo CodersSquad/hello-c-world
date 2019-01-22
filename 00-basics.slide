@@ -1,0 +1,134 @@
+C Basics
+An Introduction to C programming language
+22 Jan 2019
+Tags: coders, programming, c
+
+Obed N Munoz
+Cloud Software Engineer, Intel Corporation
+obed.n.munoz@ [ gmail | tec ] .com
+http://obedmr.com
+@_obedmr
+
+* Hello world
+
+ #include <stdio.h>
+
+ main()
+ {
+ 	printf("Hello world \n");
+ }
+
+
+* GCC Compiler
+
+The GNU Compiler with support for C, C++, Objective-C, Fortran, Ada, Go and D.
+
+.link https://gcc.gnu.org/ https://gcc.gnu.org/
+
+Compiling your first program:
+
+  cc hello.c -o hello.o
+
+
+* Custom Hello world
+
+ #include <stdio.h>
+
+ int main(int argc, char **argv)
+ {
+ 	printf("Hello  %s\n", argv[1]);
+ }
+
+Let's run it:
+
+ cc hello.c -o hello.o
+ ./hello.o Obed
+ Hello Obed
+
+
+* A bit more complex example
+
+.code -numbers src/00/fahrenheit_celcius.c
+
+* Input and Output
+
+.code -numbers src/00/word_counter.c /^int main/,/^}/ HLxxx
+
+
+* Arrays 1/3 - fixed size
+
+ #define ARRAY_LENGHT 10
+
+ int main() {
+
+     int i, tmp, arr[ARRAY_LENGHT];
+     srand(time(NULL));
+
+     printf("Initial array: \n");
+     for (i = 0;  i < ARRAY_LENGHT; i++) {
+         arr[i] = rand() % 100;
+         printf("%d " , arr[i]);
+     }
+
+     for (i = 0;  i < ARRAY_LENGHT/2; i++) {
+         tmp = arr[i];
+         arr[i] = arr[ARRAY_LENGHT - i - 1];
+         arr[ARRAY_LENGHT - i - 1] = tmp;
+     }
+ }
+
+.link src/00/reverse.c reverse.c
+
+
+* Arrays 2/3 - as argument
+
+ void reverse(int arr[ARRAY_LENGHT]) {
+
+     int i, tmp;
+
+     for (i = 0;  i < ARRAY_LENGHT/2; i++) {
+         tmp = arr[i];
+         arr[i] = arr[ARRAY_LENGHT - i - 1];
+         arr[ARRAY_LENGHT - i - 1] = tmp;
+     }
+ }
+
+ int main() {
+     ...
+     reverse(arr);
+     ...
+ }
+
+.link src/00/reverse2.c reverse2.c
+
+
+* Arrays 3/3 - dynamic size
+
+ void reverse(int lenght, int arr[]) {
+
+     int i, tmp;
+
+     for (i = 0;  i < lenght/2; i++) {
+         tmp = arr[i];
+         arr[i] = arr[lenght - i - 1];
+         arr[lenght - i - 1] = tmp;
+     }
+ }
+
+ int main(int argc, char **argv) {
+
+     int i, lenght, *arr;
+     ...
+     arr = malloc(sizeof(int) * lenght);
+     ...
+     reverse(lenght, arr);
+     ...
+ }
+
+.link src/00/reverse3.c reverse3.c
+
+
+* Resources
+This material is genereated thanks to some extracts of the following book:
+
+- The C Programming Language _by_ _Brian_ _W._ _Kernighan_
