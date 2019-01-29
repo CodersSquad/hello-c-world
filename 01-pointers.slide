@@ -66,10 +66,16 @@ So, what would be used in the `main` function?
 
 * Pointers and Arrays 2/2
 
-How to access `a` elements from `*pa`
+How to access `a`'s  elements from `*pa`
 
 .image images/01/pointer_array3.png
 
+Then,
+
+ *pa == a[0]
+ (*p + 1) == a[1]
+ (*p + 2) == a[2]
+ (*p + n) == a[n]
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:

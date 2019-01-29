@@ -39,6 +39,21 @@ What happens?
 
 * Shared or Dynamic Linking
 
+ > ldd `which emacs`
+
+ linux-vdso.so.1 (0x00007fff725cf000)
+ libtiff.so.5 => /usr/lib/libtiff.so.5 (0x00007f46288be000)
+ libjpeg.so.8 => /usr/lib/libjpeg.so.8 (0x00007f4628829000)
+ libpng16.so.16 => /usr/lib/libpng16.so.16 (0x00007f46287f1000)
+ libgif.so.7 => /usr/lib/libgif.so.7 (0x00007f46287e6000)
+ libXpm.so.4 => /usr/lib/libXpm.so.4 (0x00007f46287d2000)
+ libgtk-3.so.0 => /usr/lib/libgtk-3.so.0 (0x00007f4628088000)
+ libgdk-3.so.0 => /usr/lib/libgdk-3.so.0 (0x00007f4627f8b000)
+ libpango-1.0.so.0 => /usr/lib/libpango-1.0.so.0 (0x00007f4627f41000)
+ libcairo.so.2 => /usr/lib/libcairo.so.2 (0x00007f4627e1a000)
+ .
+ .
+ .
 
 * C Standard Library
 - Input and output: `<stdio.h>`
@@ -53,6 +68,27 @@ What happens?
 - Date and Time functions: `<time.h>`
 - Implementation-defined limits: `<limits.h>` and `<float.h>`
 
+* Let's code: Strings Manipulation library
+
+- Implement a library for string manipulation `strlib.c` with the following functions:
+
+ int strlen(char *str)
+ *char stradd(char *origin, char *addition)
+ int strfind(char *origin, char *substr)
+
+- Call all functions from `strlib.c` library in a new `str-main.c` file
+
+- Use the following commands for compilation and linking
+ gcc -c str-main.c -o str-main.o
+ gcc -c strlib.c -o strlib.o
+ gcc str-main.o strlib.o -o str-final.o
+
+- Your program needs to support the following arguments. Check the expected output:
+
+ ./str-final.o originalVeryLongString SubString
+ Initial Lenght      : 22
+ New String          : originalVeryLongStringSubString
+ SubString was found : yes
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:
