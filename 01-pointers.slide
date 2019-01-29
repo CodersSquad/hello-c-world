@@ -53,7 +53,25 @@ A pointer is a variable that contains the address of a variable.
 So, what would be used in the `main` function?
 
 
-* Resources
-This material is genereated thanks to some extracts of the following book:
+* Pointers and Arrays 1/2
 
-- The C Programming Language _by_ _Brian_ _W._ _Kernighan_
+ int a[10]; // Defines an array of 10 elements
+
+.image images/01/pointer_array1.png
+
+ int *pa;
+ pa = &a[0];
+
+.image images/01/pointer_array2.png
+
+* Pointers and Arrays 2/2
+
+How to access `a` elements from `*pa`
+
+.image images/01/pointer_array3.png
+
+
+* Resources and Credits
+This material is genereated thanks to some extracts from following resources:
+
+- The C Programming Language - _Brian_ _W._ _Kernighan_

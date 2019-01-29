@@ -1,0 +1,61 @@
+Linking Process in C
+29 Jan 2019
+Tags: coders, programming, c
+
+Obed N Munoz
+Cloud Software Engineer, Intel Corporation
+obed.n.munoz@ [ gmail | tec ] .com
+http://obedmr.com
+@_obedmr
+
+
+* Static Linking
+An example of static linking
+
+.code src/03/lib.c
+
+.code src/03/static-linking.c
+
+ gcc -c static-linking.c -o static-linking.o
+ gcc -c lib.c -o lib.o
+ gcc static-linking.o lib.o -o main.o
+ ./main.o
+ 2+3=5
+
+
+* Let's analyze the linking symbols
+
+ > nm main.o
+                  U _add
+ 0000000000000000 T _main
+                  U _printf
+ > nm lib.o
+ 0000000000000000 T _add
+
+Let's see:
+.code src/03/static-linking2.c
+
+What happens?
+
+* Shared or Dynamic Linking
+
+
+* C Standard Library
+- Input and output: `<stdio.h>`
+- Character Class Tests: `<ctype.h>`
+- String Functions: `<string.h>`
+- Mathematical Functions: `<math.h>`
+- Utility functions: `<stdlib.h>`
+- Diagnostics: `<assert.h>`
+- Variable argument lists: `<stdarg.h>`
+- Non-local jumps: `<setjmp.h>`
+- Signals: `<signal.h>`
+- Date and Time functions: `<time.h>`
+- Implementation-defined limits: `<limits.h>` and `<float.h>`
+
+
+* Resources and Credits
+This material is genereated thanks to some extracts from following resources:
+
+- The C Programming Language - _Brian_ _W._ _Kernighan_
+- [[https://jameshfisher.com/2017/08/26/static-linking.html][What is static linking in C?]] - _James_ _H._ _Fisher_

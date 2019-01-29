@@ -1,0 +1,85 @@
+Memory Management in C
+29 Jan 2019
+Tags: coders, programming, c
+
+Obed N Munoz
+Cloud Software Engineer, Intel Corporation
+obed.n.munoz@ [ gmail | tec ] .com
+http://obedmr.com
+@_obedmr
+
+* Dynamic Memory Allocation
+The process of allocating memory space at run time.
+
+C offers a set of functions for dynamic memory allocation. Below some of the most common ones:
+
+ - malloc    // allocates size bytes of memory and returns a pointer to the allocated memory
+ - realloc   // tries to change the size of the allocation pointed to by ptr to size
+ - calloc    // allocates the specified number of bytes and initializes them to zero
+ - free      // releases the specified block of memory back to the system
+
+
+* Pointers, behind the scenes
+
+Let's say:
+
+ char *p; // 4 consecutive bytes in memory for the p variable
+
+*Case* *1:*
+
+  char *p = NULL;
+  strcpy(p, “Hello”);
+
+ // Result
+ Segmentation Fault. Worse yet, the copy may actually succeed.
+
+.link src/02/no-malloc.c no-malloc.c
+
+Trying to copy the string "Hello" into location 0 (NULL) results in a run-time Bus Error and a program crash.
+
+
+* Properly allocating memory
+We can use `malloc` or `calloc` to request a pointer to a block of memory
+
+ void *malloc(size_t byteSize)
+ void *calloc(size_t numElems, size_t byteSize)
+
+.code src/02/malloc.c  /^int main/,/^}/ HLxxx
+
+* Successful allocation?
+
+.code src/02/malloc2.c
+
+* Done, let's free the space
+
+Local variables are destroyed when their enclosing function terminates.
+
+.code src/02/no-free.c
+
+
+* The address of q is returned to main, where there is an attempt to preserve and use the strings. The result is disastrous.
+
+.code src/02/no-free2.c /^int main/,/}/ HLxxx
+
+.code src/02/no-free2.c /^char \*foo\(char \*p\) {/,/}/ HLxxx
+
+ From foo: the string is Hi there, Chris
+ From foo: the string is Goodbye
+ From main: Hi there, Chris Goodbye
+
+
+* The correct way to release the space is to use free().
+
+.code src/02/free.c /^int main/,/}/ HLxxx
+
+.code src/02/free.c /^char \*foo\(char \*p\) {/,/}/ HLxxx
+
+ From foo: the string is Hi there, Chris
+ From foo: the string is Goodbye
+ From main: Goodbye Goodbye
+
+* Resources and Credits
+This material is genereated thanks to some extracts from following resources:
+
+- The C Programming Language - _Brian_ _W._ _Kernighan_
+- [[http://staff.um.edu.mt/csta1/courses/lectures/csa2060/c8a.html][Memory Management]] - _University_ _of_ _Malta_
