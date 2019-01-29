@@ -8,6 +8,11 @@ obed.n.munoz@ [ gmail | tec ] .com
 http://obedmr.com
 @_obedmr
 
+
+* Memory Structure
+
+.image images/02/memory.png
+
 * Dynamic Memory Allocation
 The process of allocating memory space at run time.
 
