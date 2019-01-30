@@ -85,9 +85,9 @@ What happens?
 
 - Your program needs to support the following arguments. Check the expected output:
 
- ./str-final.o originalVeryLongString SubString
+ ./str-final.o originalVeryLongString Addition Add
  Initial Lenght      : 22
- New String          : originalVeryLongStringSubString
+ New String          : originalVeryLongStringAddition
  SubString was found : yes
 
 * Resources and Credits
