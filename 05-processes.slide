@@ -131,18 +131,68 @@ Take a look on *procexec/exit_handlers.c* from [[http://man7.org/tlpi/code/][The
 
 * Daemons and Services
 
+A *daemon* is a process with the following characteristics:
 
-* Communication between Processes
+- It's long-lived
+- It runs in the background and has no controlling terminal
+- Can run either as privileged or non-provileged user
+
+Examples of common services:
+
+- sshd
+- httpd
+- nginx
+- mariadb
+
+What are the considerations we need to have when running our programs as daemons?
+
+
+* Systemd
+
+- *Systemd* is a set of utilities that are used in place of sysVunit to manage services, including startup and shutdown.
+
+- Systemd uses Targets and Service Groups to allow a Linux system to be brought to any defined state.
+
+- Systemd was developed by RedHat, and is currently a _de-facto_ requirement for GNOME.
+
+- Common commands:
+ systemctl status
+ systemctl list-units
+ journalctl -f
+ systemctl status <service>
+
+
+* Let's code: Add syslog support to your Logger
+
+Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/lab2.4]]
+
+
+* Communication between Processes (1/2)
+Facilities of Inter-Process Communication.
+.image images/05/ipc01.png
+
+*Note:* we'll go deeper on IPC in the following chapters.
+
+
+* Communication between Processes (2/2)
+Facilities of Inter-Process Communication.
+.image images/05/ipc02.png
 
 
 * Processes' priority and relationship
+Read Chapter 35 from _The_ _Linux_ _Programming_ _Interface_ book and summarize:
 
+- Process Priorities (Nice Values)
+- Realtime Process Scheduling
+- Realtime Process Scheduling API
+- CPU Affinity
 
-* Let's code:
+*Note:* Run the [[http://man7.org/tlpi/code/][procpri/*]] code examples and comment about.
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:
 
 - The C Programming Language - _Brian_ _W._ _Kernighan_
-- The Linux Programming Interface - _Michael_Kerrisk_
+- The Linux Programming Interface (Chapters 24, 25, 27, 36, 37, 43) - _Michael_Kerrisk_
 - [[http://www.tldp.org/LDP/LG/issue23/flower/context.html][The Linux Documentation Project]]
+- [[https://www.accs.com/p_and_p/Systemd/Systemd.pdf][A Brief Introduction to Systemd]]
