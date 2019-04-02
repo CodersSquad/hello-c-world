@@ -114,7 +114,7 @@ Distinguishes multi-processor computer architectures according to how they can b
 - Advantages
   - User-friendly global address space
   - Fast and Uniform data sharing between tasks
-  
+
 - Disadvantages
   - Lack of scalability between memory and CPUs relationship
   - Synchronization relies on programmer
@@ -130,7 +130,7 @@ Distributed memory systems require a communication network to connect inter-proc
   - Memory is scalable with number of CPUs
   - Each CPU can rapidly access its own memory
   - Cost effectiveness: can use commodity, off-the-shelf processors and networking
-  
+
 - Disadvantages
   - Data communication is mostly responsability of the programmer
   - Global memory data structures can not easily map to this memory organization
@@ -148,11 +148,80 @@ The largest and fastest computers in the world today employ both shared and dist
   - Increased programmer complexity is an important disadvantage
 
 
+* Parallel Programming Pattern's Definition
+
+In the book of [[https://www.amazon.com/Patterns-Parallel-Programming-paperback-Software/dp/0321940784][Patterns for Parallel Programming]] from _Massingill_, _Sanders_ and _Mattson_ there's a pattern language that helps on the process of understanding and designing parallel programs.
+
+.image images/07/pattern_language.png
+
+
+* Finding Concurrency
+
+Programmers should start their design of a parallel solution by analyzing the problem within the problem domain to expose exploitable concurrency.
+
+.image images/07/finding_concurrency.png
+
+Is the problem large enough and the results significant enough to justify?
+
+
+* Algorithm Structure
+
+Our goal is to refine the design and move it closer to a program that can execute tasks concurrently by mapping the concurrency onto multiple UEs running on a parallel computer.
+
+.image images/07/algorithm_structure.png
+
+The key issue at this stage is to decide which pattern or patterns are most appropriate for the problem.
+
+
+* Supportting Structures
+
+We call these patterns Supporting Structures because they describe software constructions or "structures" that support the expression of parallel algorithms.
+
+.image images/07/supporting_structures.png
+
+
+* Implementation mechanisms
+
+Every parallel program needs to:
+
+ 1. Create the set of UEs.
+ 2. Manage interactions between them and their access to shared resources
+ 3. Exchange information between UEs.
+ 4. Shut them down in an orderly manner.
+
+.image images/07/implementation_mechanisms.png
+
+
 * Parallel Programming Models
+
+- Shared Memory (without threads)
+- Threads
+- Distributed Memory / Message Passing
+- Data Parallel
+- Hybrid
+- Single Program Multiple Data (SPMD)
+- Multiple Program Multiple Data (MPMD)
+
+More details at: [[https://computing.llnl.gov/tutorials/parallel_comp/#Models]]
 
 
 * Parallel Programming Design Considerations
 
+- Understand the program and the program
+- Identify hotspots and bottlenecks
+- Partitioning (tasks and data)
+- Communications
+  - Overhead
+  - Latency vs Bandwith
+  - Synchronous or Asynchronous
+  - Scope (point-to-point or collective)
+- Synchronization
+  - Barriers
+  - Locks/Semaphores
+  - Synhcronous communication operations
+- Load balancing
+
+More at: [[https://computing.llnl.gov/tutorials/parallel_comp/#Designing]]
 
 * Pthreads - Introduction
 
@@ -254,12 +323,24 @@ What happens if we do do a `pthread_detach(pthread_self());` inside the `threadF
     In a multiprocess application, differ- ent processes can run different programs.
   - Aside from data, threads also share certain other information.
     e.g. file descriptors, signal dispositions, current working directory, and user and group IDs.
-  
+
+
 
 * Synchronization: Mutexes
 
+.link https://computing.llnl.gov/tutorials/pthreads/#Mutexes
 
-* Synchronization: Condition Variables 
+
+* Synchronization: Condition Variables
+
+.link https://computing.llnl.gov/tutorials/pthreads/#ConditionVariables
+
+
+* Let's code: Pthreads Exercise
+
+- For *class* - [[https://github.com/CodersSquad/ap-labs/tree/master/labs/lab4.1]]
+
+- For *home* - [[https://github.com/CodersSquad/ap-labs/tree/master/labs/lab4.2]]
 
 
 * Resources and Credits
