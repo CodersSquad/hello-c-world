@@ -207,7 +207,7 @@ More details at: [[https://computing.llnl.gov/tutorials/parallel_comp/#Models]]
 
 * Parallel Programming Design Considerations
 
-- Understand the program and the program
+- Understand the problem and the program
 - Identify hotspots and bottlenecks
 - Partitioning (tasks and data)
 - Communications
