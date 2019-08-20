@@ -50,7 +50,20 @@ Let's run it:
 
 .code -numbers src/00/fahrenheit_celcius.c
 
-* Input and Output
+.link src/00/fahrenheit_celcius.c  fahrenheit_celcius.c
+
+
+* Simple Input and Output 1/2
+
+ #include <stdio.h>
+
+ #define IN   1   /* inside a word */
+ #define OUT  0   /* outside a word */
+
+.link src/00/word_counter.c  word_counter.c
+
+
+* Simple Input and Output 2/2
 
 .code -numbers src/00/word_counter.c /^int main/,/^}/ HLxxx
 
@@ -127,6 +140,10 @@ Let's run it:
 
 .link src/00/reverse3.c reverse3.c
 
+
+* Let's Code: Word reverser
+
+Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/word-reverser]]
 
 * Resources
 This material is genereated thanks to some extracts of the following book:
