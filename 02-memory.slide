@@ -1,5 +1,5 @@
 Memory Management in C
-29 Jan 2019
+27 Aug 2019
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -51,15 +51,23 @@ We can use `malloc` or `calloc` to request a pointer to a block of memory
 
 .code src/02/malloc.c  /^int main/,/^}/ HLxxx
 
+.link src/02/malloc.c malloc.c
+
+
 * Successful allocation?
 
 .code src/02/malloc2.c
+
+.link src/02/malloc2.c malloc2.c
+
 
 * Done, let's free the space
 
 Local variables are destroyed when their enclosing function terminates.
 
 .code src/02/no-free.c
+
+.link src/02/no-free.c no-free.c
 
 
 * The address of q is returned to main, where there is an attempt to preserve and use the strings. The result is disastrous.
@@ -72,6 +80,7 @@ Local variables are destroyed when their enclosing function terminates.
  From foo: the string is Goodbye
  From main: Hi there, Chris Goodbye
 
+.link src/02/no-free2.c no-free2.c
 
 * The correct way to release the space is to use free().
 
@@ -82,6 +91,8 @@ Local variables are destroyed when their enclosing function terminates.
  From foo: the string is Hi there, Chris
  From foo: the string is Goodbye
  From main: Goodbye Goodbye
+
+.link src/02/free.c free.c
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:

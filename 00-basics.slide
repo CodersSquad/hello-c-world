@@ -1,6 +1,6 @@
 C Basics
 An Introduction to C programming language
-22 Jan 2019
+27 Aug 2019
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -52,6 +52,13 @@ Let's run it:
 
 .link src/00/fahrenheit_celcius.c  fahrenheit_celcius.c
 
+* Let's Code: Fahrenheit to Cercius
+
+- Modify the [[src/00/fahrenheit_celcius.c][fahrenheit_celcius.c]] to receive the number of grades in command line.
+
+ # Example
+ ./fahrenhet_celcius 32
+ Fahrenheit: 32, Celcius: 0
 
 * Simple Input and Output 1/2
 
@@ -148,4 +155,4 @@ Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/la
 * Resources
 This material is genereated thanks to some extracts of the following book:
 
-- The C Programming Language _by_ _Brian_ _W._ _Kernighan_
+- *The* *C* *Programming* *Language* (Chapters 1,2,3,4) - _by_ _Brian_ _W._ _Kernighan_
