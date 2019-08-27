@@ -162,28 +162,6 @@ What's the difference between *a* and *b*?
 
 * Pointers to functions
 
-#include <stdio.h>
-
-#include <string.h>
-
-
-
-#define MAXLINES 5000     /* max #lines to be sorted */
-
-char *lineptr[MAXLINES];  /* pointers to text lines */
-
-
-
-int readlines(char *lineptr[], int nlines);
-
-void writelines(char *lineptr[], int nlines);
-
-void qsort(void *lineptr[], int left, int right,
-
-           int (*comp)(void *, void *));
-
-int numcmp(char *, char *);
-
 
 * Let's code: Generic Merge Sort
 - Based on 5.11
