@@ -103,7 +103,7 @@ Then,
  }
 
 
-* Let's code: year day calculator
+* Let's code: month day calculator
 
 From previous example,
 
@@ -114,7 +114,7 @@ From previous example,
   /* month_day function's prototype*/
   void month_day(int year, int yearday, int *pmonth, int *pday)
 
-- [[][Missing link to github]]
+- Follow instructions from: [[https://github.com/CodersSquad/ap-labs/tree/master/labs/month-day]]
 
 
 * Pointer Arrays
@@ -164,14 +164,20 @@ What's the difference between *a* and *b*?
 
 
 * Let's code: Generic Merge Sort
-- Based on 5.11
+- Follow instructions from:
+[[https://github.com/CodersSquad/ap-labs/tree/master/labs/generic-merge-sort]]
+
 
 * Structures ...
+Read the *Chapter* *6* - *Structures* in the [[https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628][The C Programming Language]] book.
+
 - Declaration of structures
 - Usage in function and as parameters
 - Arrays of structures
 - Self-referencing
 - Pointers to structures
+- Table lookup (Hash tables)
+
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:

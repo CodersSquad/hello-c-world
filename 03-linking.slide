@@ -55,6 +55,8 @@ What happens?
  .
  .
 
+- Take a look on [[http://man7.org/linux/man-pages/man8/ldconfig.8.html][ldconfig]] tool and shared library paths
+
 * C Standard Library
 - Input and output: `<stdio.h>`
 - Character Class Tests: `<ctype.h>`
@@ -68,27 +70,11 @@ What happens?
 - Date and Time functions: `<time.h>`
 - Implementation-defined limits: `<limits.h>` and `<float.h>`
 
+
 * Let's code: Strings Manipulation library
 
-- Implement a library for string manipulation `strlib.c` with the following functions:
+Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/str-lib]]
 
- int strlen(char *str)
- *char stradd(char *origin, char *addition)
- int strfind(char *origin, char *substr)
-
-- Call all functions from `strlib.c` library in a new `str-main.c` file
-
-- Use the following commands for compilation and linking
- gcc -c str-main.c -o str-main.o
- gcc -c strlib.c -o strlib.o
- gcc str-main.o strlib.o -o str-final.o
-
-- Your program needs to support the following arguments. Check the expected output:
-
- ./str-final.o originalVeryLongString Addition Add
- Initial Lenght      : 22
- New String          : originalVeryLongStringAddition
- SubString was found : yes
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:

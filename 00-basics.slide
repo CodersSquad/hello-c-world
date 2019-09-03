@@ -48,17 +48,17 @@ Let's run it:
 
 * A bit more complex example
 
-.code -numbers src/00/fahrenheit_celcius.c
+.code -numbers src/00/fahrenheit_celsius.c
 
-.link src/00/fahrenheit_celcius.c  fahrenheit_celcius.c
+.link src/00/fahrenheit_celsius.c  fahrenheit_celsius.c
 
-* Let's Code: Fahrenheit to Cercius
+* Let's Code: Fahrenheit to Celsius
 
-- Modify the [[src/00/fahrenheit_celcius.c][fahrenheit_celcius.c]] to receive the number of grades in command line.
+- Modify the [[src/00/fahrenheit_celsius.c][fahrenheit_celsius.c]] to receive the number of grades in command line.
 
  # Example
- ./fahrenhet_celcius 32
- Fahrenheit: 32, Celcius: 0
+ ./fahrenhet_celsius 32
+ Fahrenheit: 32, Celsius: 0
 
 - Follow instructions from github.com/CodersSquad/ap-labs/tree/master/labs/c-basics
 

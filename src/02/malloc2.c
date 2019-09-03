@@ -6,7 +6,6 @@ int main() {
     char *q = NULL;
 
     printf("Requesting space for \"Goodbye\"\n");
-
     q = (char *)malloc(strlen("Goodbye")+1);
 
     // Proper allocate validation
