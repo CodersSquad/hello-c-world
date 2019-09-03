@@ -60,6 +60,9 @@ Let's run it:
  ./fahrenhet_celcius 32
  Fahrenheit: 32, Celcius: 0
 
+- Follow instructions from github.com/CodersSquad/ap-labs/tree/master/labs/c-basics
+
+
 * Simple Input and Output 1/2
 
  #include <stdio.h>
