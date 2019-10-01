@@ -40,12 +40,12 @@ http://obedmr.com
 
 A *device* *special* *file* corresponts to a device on the system.
 
-A *device* *driver* is a unit of kernel code that implemnts a set of operations that correspond to input and output actions on an associated device.
+A *device* *driver* is a unit of kernel code that implements a set of operations that correspond to input and output actions on an associated device.
 
 Devices can be divided in 2 types:
 
 - _Character_ _devices_ - data on character-by-character basis. Terminals and keyboards.
-- _Block_ _devices_ - data a block at a time. Disks and tape drives.
+- _Block_ _devices_ - data as block at a time. Disks and tape drives.
 
 * File System (disks and partitions)
 
@@ -70,8 +70,7 @@ A file system is an organized collection of regular files and directories. Some 
 
 * File System (File descriptors)
 
-When _openning_ files for write, you'll create or discard previous contents. The system requires to do some
-validations to verify that you have the proper rigthts to do so.
+When _openning_ files for write, you'll create or discard previous contents. The system requires to do some validations to verify that you have the proper rigthts to do so.
 
 A *File* *descriptor* is a non-negative integer that is used as a reference to the file you're working with.
 
@@ -116,9 +115,12 @@ which will be function within the Operating System where the programs are runnin
 .image images/04/open_examples.png
 
 
-* I/O System Calls - creat, read and write
+* I/O System Calls - creat, read and write (1/2)
 
 .image images/04/creat.png
+- What are the difference between `open` and `create`? go to: [[https://linux.die.net/man/2/creat]]
+
+* I/O System Calls - creat, read and write (2/2)
 .image images/04/read.png
 .image images/04/write.png
 
@@ -220,7 +222,7 @@ Take a look on *signals/ouch.c* and *signals/intquit.c* from [[http://man7.org/t
 
 * Let's Code: mycat
 
-.link https://github.com/CodersSquad/ap-labs/tree/master/labs/lab1.1
+.link https://github.com/CodersSquad/ap-labs/tree/master/labs/mycat
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:

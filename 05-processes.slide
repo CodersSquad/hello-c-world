@@ -1,5 +1,5 @@
 Processes Management
-19 Feb 2019
+01 Oct 2019
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -55,7 +55,7 @@ Take a look on *procexec/t_fork.c* from [[http://man7.org/tlpi/code/][The Linux 
 
 Conceptually, we can consider `fork()` as creating copies of the parent’s text, data, heap, and stack segments. It would be wasteful in many cases.
 
-Most modern UNIX implementa- tions, including Linux, use two techniques to avoid such wasteful copying:
+Most modern UNIX implementations, including Linux, use two techniques to avoid such wasteful copying:
 
 - The kernel marks the *text* *segment* of each process *as* *read-only*, so that a process can’t modify its own code. With a *per-process* *page-table* that points to the same virtual memory pages in parent.
 
@@ -164,7 +164,7 @@ What are the considerations we need to have when running our programs as daemons
 
 * Let's code: Add syslog support to your Logger
 
-Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/lab2.4]]
+Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/advanced-logger]]
 
 
 * Communication between Processes (1/2)
