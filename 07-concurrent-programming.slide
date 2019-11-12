@@ -1,10 +1,10 @@
 Concurrent Programming
-19 Mar 2019
+12 Nov 2019
 Tags: coders, programming, c
 
 Obed N Munoz
 Cloud Software Engineer
-obed.n.munoz@ [ gmail | tec ] .com
+obed.n.munoz@gmail.com
 http://obedmr.com
 @_obedmr
 
@@ -336,11 +336,11 @@ What happens if we do do a `pthread_detach(pthread_self());` inside the `threadF
 .link https://computing.llnl.gov/tutorials/pthreads/#ConditionVariables
 
 
-* Let's code: Pthreads Exercise
+* Let's code: Pthreads
 
-- For *class* - [[https://github.com/CodersSquad/ap-labs/tree/master/labs/lab4.1]]
+- [[https://github.com/CodersSquad/ap-labs/tree/master/labs/mutexes-and-conditional-vars]]
 
-- For *home* - [[https://github.com/CodersSquad/ap-labs/tree/master/labs/lab4.2]]
+- [[https://github.com/CodersSquad/ap-labs/tree/master/labs/matrix-multiplication]]
 
 
 * Resources and Credits
