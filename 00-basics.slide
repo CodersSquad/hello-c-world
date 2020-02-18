@@ -1,11 +1,11 @@
 C Basics
 An Introduction to C programming language
-27 Aug 2019
+18 Feb 2020
 Tags: coders, programming, c
 
 Obed N Munoz
 Cloud Software Engineer
-obed.n.munoz@ [ gmail | tec ] .com
+obed.n.munoz@gmail.com
 http://obedmr.com
 @_obedmr
 
@@ -60,7 +60,9 @@ Let's run it:
  ./fahrenhet_celsius 32
  Fahrenheit: 32, Celsius: 0
 
-- Follow instructions from github.com/CodersSquad/ap-labs/tree/master/labs/c-basics
+- Follow instructions from:
+
+[[http://classify.obedmr.com/get-lab/ap-labs/c-basics]]
 
 
 * Simple Input and Output 1/2
@@ -153,7 +155,9 @@ Let's run it:
 
 * Let's Code: Word reverser
 
-Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/word-reverser]]
+Follow instructions from:
+
+[[http://classify.obedmr.com/get-lab/ap-labs/word-reverser]]
 
 * Resources
 This material is genereated thanks to some extracts of the following book:
