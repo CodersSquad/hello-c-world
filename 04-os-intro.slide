@@ -1,11 +1,11 @@
 Operating System Architecture
 An Introduction to UNIX/Linux
-05 Feb 2019
+10 Mar 2020
 Tags: coders, programming, c
 
 Obed N Munoz
 Cloud Software Engineer
-obed.n.munoz@ [ gmail | tec ] .com
+obed.n.munoz@gmail.com
 http://obedmr.com
 @_obedmr
 
@@ -132,7 +132,7 @@ which will be function within the Operating System where the programs are runnin
 
 * I/O System Calls - close and unlink
 
-There's a limit (about 20) on the number of opened files in a program. In order to open more, a program should be able to re-use file descriptors.
+There's a limit (about 1024) on the number of opened files in a program. In order to open more, a program should be able to re-use file descriptors.
 
 - `close(int` `fd)`
 *breaks* the *connection* between the file descriptor and the opened file.
@@ -222,7 +222,7 @@ Take a look on *signals/ouch.c* and *signals/intquit.c* from [[http://man7.org/t
 
 * Let's Code: mycat
 
-.link https://github.com/CodersSquad/ap-labs/tree/master/labs/mycat
+.link http://classify.obedmr.com/get-lab/ap-labs/mycat
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:
