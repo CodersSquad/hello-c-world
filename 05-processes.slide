@@ -1,10 +1,10 @@
 Processes Management
-01 Oct 2019
+24 Mar 2020
 Tags: coders, programming, c
 
 Obed N Munoz
 Cloud Software Engineer
-obed.n.munoz@ [ gmail | tec ] .com
+obed.n.munoz@gmail.com
 http://obedmr.com
 @_obedmr
 
@@ -164,7 +164,9 @@ What are the considerations we need to have when running our programs as daemons
 
 * Let's code: Add syslog support to your Logger
 
-Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/advanced-logger]]
+- Follow instructions from:
+
+[[http://classify.obedmr.com/get-lab/ap-labs/advanced-logger]]
 
 
 * Communication between Processes (1/2)
