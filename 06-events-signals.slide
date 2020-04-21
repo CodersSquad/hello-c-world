@@ -1,5 +1,5 @@
 Events and Signals
-07 Oct 2019
+20 Apr 2020
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -82,7 +82,8 @@ In a second terminal, run:
 
 
 * Let's Code: File/Directory Monitor
-Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/file-dir-monitor]]
+
+.link http://classify.obedmr.com/get-lab/ap-labs/file-dir-monitor
 
 
 * Signals
@@ -165,7 +166,9 @@ The `killpg()` function sends a signal to all of the members of a process group.
 Take a look on *signals/t_kill.c* from [[http://man7.org/tlpi/code/][The Linux Programming Interface]].
 
 * Let's Code: Progress Notifier with Signals
-Follow instructions from [[https://github.com/CodersSquad/ap-labs/tree/master/labs/progress-notifier]]
+
+.link http://classify.obedmr.com/get-lab/ap-labs/progress-notifier
+
 
 * Resources and Credits
 This material is genereated thanks to some extracts from following resources:
