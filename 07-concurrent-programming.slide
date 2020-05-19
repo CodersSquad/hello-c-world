@@ -309,15 +309,18 @@ What happens if we do do a `pthread_detach(pthread_self());` inside the `threadF
 * Threads vs Processes Discussion
 
 - Advantages
+
   - Sharing data between threads is easy.
   - Thread creation is faster than process creation.
 
 - Disadvantages
+
   - We need to ensure that the function we call are thread-safe.
   - A bug in one thread can damage all of the threads in the process.
   - Each thread is competing for use of the finite virtual address space of the host process.
 
 - Dession making points
+
   - Dealing with signals in a multithreaded application requires careful design.
   - In a multithreaded application, all threads must be running the same program.
     In a multiprocess application, different processes can run different programs.
