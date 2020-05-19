@@ -1,5 +1,5 @@
 Concurrent Programming
-12 Nov 2019
+12 May 2020
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -320,7 +320,7 @@ What happens if we do do a `pthread_detach(pthread_self());` inside the `threadF
 - Dession making points
   - Dealing with signals in a multithreaded application requires careful design.
   - In a multithreaded application, all threads must be running the same program.
-    In a multiprocess application, differ- ent processes can run different programs.
+    In a multiprocess application, different processes can run different programs.
   - Aside from data, threads also share certain other information.
     e.g. file descriptors, signal dispositions, current working directory, and user and group IDs.
 
@@ -338,9 +338,10 @@ What happens if we do do a `pthread_detach(pthread_self());` inside the `threadF
 
 * Let's code: Pthreads
 
-- [[https://github.com/CodersSquad/ap-labs/tree/master/labs/mutexes-and-conditional-vars]]
+- Follow instructions from:
 
-- [[https://github.com/CodersSquad/ap-labs/tree/master/labs/matrix-multiplication]]
+- [[http://classify.obedmr.com/get-lab/ap-labs/mutexes-and-conditional-vars]]
+- [[http://classify.obedmr.com/get-lab/ap-labs/matrix-multiplication]]
 
 
 * Resources and Credits
