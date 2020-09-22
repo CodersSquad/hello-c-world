@@ -171,6 +171,7 @@ What are the considerations we need to have when running our programs as daemons
 
 * Communication between Processes (1/2)
 Facilities of Inter-Process Communication.
+
 .image images/05/ipc01.png
 
 *Note:* we'll go deeper on IPC in the following chapters.
@@ -178,6 +179,7 @@ Facilities of Inter-Process Communication.
 
 * Communication between Processes (2/2)
 Facilities of Inter-Process Communication.
+
 .image images/05/ipc02.png
 
 
