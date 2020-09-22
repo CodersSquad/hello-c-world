@@ -1,5 +1,5 @@
 Processes Management
-24 Mar 2020
+22 Sept 2020
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -156,6 +156,7 @@ What are the considerations we need to have when running our programs as daemons
 - Systemd was developed by RedHat, and is currently a _de-facto_ requirement for GNOME.
 
 - Common commands:
+
  systemctl status
  systemctl list-units
  journalctl -f
