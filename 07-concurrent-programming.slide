@@ -1,5 +1,5 @@
 Concurrent Programming
-12 May 2020
+13 Nov 2020
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -339,11 +339,10 @@ What happens if we do do a `pthread_detach(pthread_self());` inside the `threadF
 .link https://computing.llnl.gov/tutorials/pthreads/#ConditionVariables
 
 
-* Let's code: Pthreads
+* Let's code: Matrix Multiplication with Pthreads
 
 - Follow instructions from:
 
-- [[http://classify.obedmr.com/get-lab/ap-labs/mutexes-and-conditional-vars]]
 - [[http://classify.obedmr.com/get-lab/ap-labs/matrix-multiplication]]
 
 
