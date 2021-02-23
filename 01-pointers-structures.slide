@@ -84,6 +84,7 @@ Then,
 * Multi-dimensional arrays
 
 - Initialization
+
  static char daytab[2][13] = {
      {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},
      {0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
@@ -109,7 +110,7 @@ From previous example,
 
 - Add the proper error checking mechanisms
 
-- Implement a second *month_day* function that given year and year day, calculate the corresponding  month and the month's day. Use pointers for month and month's day.
+- Implement a second *month_day* function that given a year and a year day, calculate the corresponding month and the month's day numbers. Use pointers for month and month's day.
 
   /* month_day function's prototype*/
   void month_day(int year, int yearday, int *pmonth, int *pday)
@@ -138,9 +139,11 @@ From previous example,
 * Pointer vs. Multi-dimensional arrays 1/2
 
 - Multi-dimensional array
+
  int a[10][20];
 
 - Pointer array
+
  int *b[10];
 
 What's the difference between *a* and *b*?
