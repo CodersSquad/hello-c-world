@@ -1,5 +1,5 @@
 Concurrent Programming
-13 Nov 2020
+20 Apr 2021
 Tags: coders, programming, c
 
 Obed N Munoz
@@ -36,7 +36,7 @@ http://obedmr.com
 * Parallel Programming - Parallel Computers 1/2
 
 *Stand-alone* *Computers*
-- Multiple functional units (Lx Caches, prefetch, decode, floating pont, GPU, etc)
+- Multiple functional units (Lx Caches, prefetch, decode, floating point, GPU, etc)
 - Multiple execution units/cores
 - Multiple hardware threads
 
@@ -80,8 +80,8 @@ Parallel computers still follow this basic design, just multiplied in units. The
 
 - *Task* - as a sequence of instructions to solve a particular problem
 - *Unit* *of* *execution* *(UE)* - a task needs to be mapped to a UE such as a process or thread
-- *Processing* *element* *(PE)* - as a generic term for a hardware element that executes a stream of instructions. 
-- Load balance and load balancing
+- *Processing* *element* *(PE)* - as a generic term for a hardware element that executes a stream of instructions
+- Load balancer and load balancing
 - Synchronization
 - Synchronus vs Asynchronus
 - Race Conditions
@@ -103,12 +103,14 @@ Distinguishes multi-processor computer architectures according to how they can b
 - Multiple processors can operate independently but share same memory resources.
 
 *Uniform* *Memory* *Access* *(UMA)*
+
 .image images/07/uma.png
 
 
 * Parallel Architectures - Shared Memory
 
 *Non-Uniform* *Memory* *Access* *(NUMA)*
+
 .image images/07/numa.png
 
 - Advantages
