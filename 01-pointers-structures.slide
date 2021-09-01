@@ -76,9 +76,9 @@ How to access `a`'s  elements from `*pa`
 Then,
 
  *pa == a[0]
- (*p + 1) == a[1]
- (*p + 2) == a[2]
- (*p + n) == a[n]
+ *(pa + 1) == a[1]
+ *(pa + 2) == a[2]
+ *(pa + n) == a[n]
 
 
 * Multi-dimensional arrays
