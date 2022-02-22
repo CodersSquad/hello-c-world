@@ -80,7 +80,7 @@ https://gcc.gnu.org/
 
 ---
 
-# Check out  the [``fahrenheit_celsius.c``](/src/00/fahrenheit_celsius.c)
+# Check out  the [``fahrenheit_celsius.c``](src/00/fahrenheit_celsius.c)
 
 ```c
 #include <stdio.h>
