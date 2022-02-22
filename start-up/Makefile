@@ -12,7 +12,6 @@ server :
 public: clean html
 	mkdir -p public/
 	mv -f *.html public/
-	cp -rf images/ public/
 	cp -rf src/ public/
 
 clean:
