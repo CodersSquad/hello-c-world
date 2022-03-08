@@ -18,7 +18,7 @@ https://talks.obedmr.com/
 
 # `hello.c`
 
-```c
+```
  #include <stdio.h>
 
  main()
@@ -48,7 +48,7 @@ https://gcc.gnu.org/
 
 # `hello2.c`
 
-```c
+```
  #include <stdio.h>
 
  int main(int argc, char **argv)
@@ -82,7 +82,7 @@ https://gcc.gnu.org/
 
 # Check out  the [``fahrenheit_celsius.c``](src/00/fahrenheit_celsius.c)
 
-```c
+```
 #include <stdio.h>
 
 #define   LOWER  0       /* lower limit of table */
@@ -126,7 +126,7 @@ Fahrenheit: 30, Celsius: -1.11
 
 Link to source code: [`word_counter.c`](src/00/word_counter.c)
 
-```c
+```
 #include <stdio.h>
 
 #define IN   1   /* inside a word */
@@ -143,7 +143,7 @@ int main()
 
 ---
 
-```c
+```
 while ((c = getchar()) != EOF) {
 	++nc;
 	if (c == '\n')
@@ -165,7 +165,7 @@ while ((c = getchar()) != EOF) {
 
 # Arrays - fixed size - [reverse.c](src/00/reverse.c)
 
-```c
+```
  #define ARRAY_LENGHT 10
 
  int main() {
@@ -188,7 +188,7 @@ while ((c = getchar()) != EOF) {
 
 # Arrays - as argument - [reverse2.c](src/00/reverse2.c)
 
-```c
+```
  void reverse(int arr[ARRAY_LENGHT]) {
      int i, tmp;
 
@@ -216,7 +216,7 @@ while ((c = getchar()) != EOF) {
 
 # Arrays - dynamic size - [reverse3.c](src/00/reverse3.c)
 
-```c
+```
  void reverse(int lenght, int arr[]) {
      int i, tmp;
 

@@ -21,7 +21,7 @@ A pointer is a variable that contains the address of a variable.
 
 ![pointer image](images/pointer.png)
 
-```c
+```
 int x = 1, y = 2, z[10];
 int *ip;         /* ip is a pointer to int */
 ip = &x;         /* ip now points to x */
@@ -37,7 +37,7 @@ ip = &z[0];      /* ip now points to z[0] */
 
 - Arguments by value
 
-```c
+```
 void swap(int x, int y)
 {
    int temp;
