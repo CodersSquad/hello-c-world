@@ -153,7 +153,7 @@ int day_of_year(int year, int month, int day)
 void month_day(int year, int yearday, int *pmonth, int *pday);
 ```
 - Follow instructions from:
-http://classify.obedmr.com/get-lab/ap-labs/month-day
+https://github.com/CodersSquad/c-month-day
 
 
 ---
