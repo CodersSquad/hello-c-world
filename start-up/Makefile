@@ -13,6 +13,7 @@ public: clean html
 	mkdir -p public/
 	mv -f *.html public/
 	cp -rf src/ public/
+	cp -rf images/ public/
 
 clean:
 	rm -rf *.html public
