@@ -242,12 +242,12 @@ void qsort(void *lineptr[], int left, int right,
 # Let's code: Generic Merge Sort
 
 - Follow instructions from:
-http://classify.obedmr.com/get-lab/ap-labs/generic-merge-sort
+https://github.com/CodersSquad/c-generic-mergesort
 
 
 ---
 
-# More about 5tructures ...
+# More about Structures ...
 Read the **Chapter 6 - Structures** in
 the [The C Programming Language](https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628) book.
 
