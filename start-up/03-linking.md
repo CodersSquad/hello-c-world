@@ -113,7 +113,7 @@ ul { columns: 2; }
 
 - Follow instructions from:
 
-[[http://classify.obedmr.com/get-lab/ap-labs/str-lib]]
+https://github.com/CodersSquad/c-strlib
 
 
 ---
