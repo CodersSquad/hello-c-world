@@ -252,6 +252,7 @@ This material was base in some extracts of the following book:
 
 - **The C Programming Language** (chs. 1,2,3,4) - _by_ _Brian_ _W._ _Kernighan_
 
+
 ---
 
 # Thanks

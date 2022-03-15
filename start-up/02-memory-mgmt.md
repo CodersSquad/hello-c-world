@@ -164,3 +164,12 @@ This material is genereated thanks to some extracts from following resources:
 
 - The C Programming Language - _Brian_ _W._ _Kernighan_
 - [Memory Management](http://staff.um.edu.mt/csta1/courses/lectures/csa2060/c8a.html) - _University_ _of_ _Malta_
+
+
+---
+
+# Thanks
+
+- **Obed N Muñoz Reynoso**
+	- Cloud Software Engineer
+	- obed.n.munoz@``gmail | tec | intel``.com
