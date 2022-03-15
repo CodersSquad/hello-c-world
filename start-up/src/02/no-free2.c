@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 char *foo(char *);
 
@@ -8,9 +9,7 @@ int main() {
     char *b = NULL;
 
     a = foo("Hi there, Chris");
-    free(a);
     b = foo("Goodbye");
-    free(b);
     printf("From main: %s %s\n", a, b);
     return 0;
 }

@@ -19,7 +19,7 @@ https://talks.obedmr.com/
 # Pointer
 A pointer is a variable that contains the address of a variable.
 
-![pointer image](images/pointer.png)
+![bg contain](images/pointer.png)
 
 ```
 int x = 1, y = 2, z[10];
