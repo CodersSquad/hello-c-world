@@ -119,7 +119,7 @@ https://github.com/CodersSquad/c-strlib
 ---
 
 # Resources and Credits
-This material is genereated thanks to some extracts from following resources:
+This material is genereted thanks to some extracts from following resources:
 
 - The C Programming Language - _Brian_ _W._ _Kernighan_
 - [What is static linking in C?](https://jameshfisher.com/2017/08/26/static-linking.html) - _James_ _H._ _Fisher_

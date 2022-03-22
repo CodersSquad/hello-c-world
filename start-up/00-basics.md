@@ -248,7 +248,7 @@ https://github.com/CodersSquad/c-word-reverser
 ---
 
 #  Resources
-This material was base in some extracts of the following book:
+This material was generated with some extracts of the following book:
 
 - **The C Programming Language** (chs. 1,2,3,4) - _by_ _Brian_ _W._ _Kernighan_
 
