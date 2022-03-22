@@ -7,7 +7,7 @@ backgroundColor: #fff
 backgroundImage: url('https://marp.app/assets/hero-background.svg')
 ---
 
-![bg left:40% 80%](https://www.pngkit.com/png/full/101-1010012_c-programming-icon-c-programming-language-logo.png)
+![bg left:40% 80%](https://freepngimg.com/thumb/penguin/75902-tux-kernel-racer-penguins-linux-penguin.png)
 
 # **Operating System Architecture**
 ## An Introduction to UNIX/Linux
