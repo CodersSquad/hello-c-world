@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sections=(start-up os)
+sections=(start-up os processes)
 
 rm -rf public
 
