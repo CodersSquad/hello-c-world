@@ -67,7 +67,7 @@ The two processes are executing the same program text, but they have separate co
      /* Performs actions specific to parent */
 ```
 
-Source Code:  `procexec/t_fork.c` from [TLPI](http://man7.org/tlpi/code/).
+Source Code: `procexec/t_fork.c` from [TLPI](http://man7.org/tlpi/code/).
 
 
 ---
