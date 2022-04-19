@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sections=(start-up os processes events-signals)
+sections=(start-up os processes events-signals concurrent)
 
 rm -rf public
 
