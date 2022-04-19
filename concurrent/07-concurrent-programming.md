@@ -260,7 +260,7 @@ We call these patterns Supporting Structures because they describe software cons
 - Single Program Multiple Data (SPMD)
 - Multiple Program Multiple Data (MPMD)
 
-More details at: [[https://computing.llnl.gov/tutorials/parallel_comp/#Models]]
+More details at: https://computing.llnl.gov/tutorials/parallel_comp/#Models
 
 
 ---
