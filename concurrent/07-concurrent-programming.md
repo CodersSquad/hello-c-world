@@ -437,3 +437,10 @@ This material is genereated thanks to some extracts from following resources:
 - The C Programming Language - _Brian_ _W._ _Kernighan_
 
 
+---
+
+# Thanks
+
+- **Obed N Muñoz Reynoso**
+	- Cloud Software Engineer
+	- obed.n.munoz@``gmail | tec | intel``.com
