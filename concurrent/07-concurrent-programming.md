@@ -426,14 +426,14 @@ Source Code: `threads/simple_thread.c` from [TLPI](http://man7.org/tlpi/code/)
 
 # Synchronization: Mutexes
 
-https://computing.llnl.gov/tutorials/pthreads/#Mutexes
+https://hpc-tutorials.llnl.gov/posix/mutex_variables/
 
 
 ---
 
 # Synchronization: Condition Variables
 
-https://computing.llnl.gov/tutorials/pthreads/#ConditionVariables
+https://hpc-tutorials.llnl.gov/posix/condition_variables/
 
 
 ---
