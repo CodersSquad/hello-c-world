@@ -239,10 +239,10 @@ void qsort(void *lineptr[], int left, int right,
 
 ---
 
-# Let's code: Generic Merge Sort
+# Let's code: Generic Sort
 
 - Follow instructions from:
-https://github.com/CodersSquad/c-generic-mergesort
+https://github.com/CodersSquad/c-generic-sort
 
 
 ---
