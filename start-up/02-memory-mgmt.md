@@ -26,7 +26,7 @@ https://talks.obedmr.com/
 ---
 
 # Dynamic Memory Allocation
-The process of allocating memory space aton run time.
+The process of allocating memory space at runtime.
 
 C offers a set of functions for dynamic memory allocation.
 
